@@ -32,12 +32,33 @@ export default function EditContact() {
         />
       </p>
       <label>
-        <span>Twitter</span>
+        <span>Address</span>
         <input
           type="text"
-          name="twitter"
-          placeholder="@jack"
-          defaultValue={contact.twitter}
+          aria-label="Address"
+          name="Address"
+          placeholder="Address"
+          defaultValue={contact.address}
+        />
+      </label>
+      <label>
+        <span>Phone Number</span>
+        <input
+          type="text"
+          aria-label="Phone Number"
+          name="Phone Number"
+          placeholder="Phone Number"
+          defaultValue={contact.phone}
+        />
+      </label>
+      <label>
+        <span>Email</span>
+        <input
+          type="text"
+          aria-label="Email"
+          name="Email"
+          placeholder="Email"
+          defaultValue={contact.email}
         />
       </label>
       <label>
