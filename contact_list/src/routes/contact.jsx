@@ -40,11 +40,7 @@ export default function Contact() {
           <Favorite contact={contact} />
         </h1>
 
-        {contact.address && <p>{contact.address}</p>}
-
-        {contact.phone && <p>{contact.phone}</p>}
-
-        {contact.email && <p>{contact.email}</p>}
+        {contact.twitter && <p>{contact.twitter}</p>}
 
         {contact.notes && <p>{contact.notes}</p>}
 

@@ -35,30 +35,17 @@ export default function EditContact() {
         <span>Address</span>
         <input
           type="text"
-          aria-label="Address"
-          name="Address"
-          placeholder="Address"
-          defaultValue={contact.address}
-        />
-      </label>
-      <label>
-        <span>Phone Number</span>
-        <input
-          type="text"
-          aria-label="Phone Number"
-          name="Phone Number"
-          placeholder="Phone Number"
-          defaultValue={contact.phone}
+          name="twitter"
+          placeholder="Address "
+          defaultValue={contact.twitter}
         />
       </label>
       <label>
         <span>Email</span>
-        <input
-          type="text"
-          aria-label="Email"
-          name="Email"
+        <textarea
+          name="notes"
           placeholder="Email"
-          defaultValue={contact.email}
+          defaultValue={contact.notes}
         />
       </label>
       <label>
@@ -70,10 +57,6 @@ export default function EditContact() {
           name="avatar"
           defaultValue={contact.avatar}
         />
-      </label>
-      <label>
-        <span>Notes</span>
-        <textarea name="notes" defaultValue={contact.notes} rows={6} />
       </label>
       <p>
         <button type="submit">Save</button>
